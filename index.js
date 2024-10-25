@@ -1,6 +1,9 @@
 function ValidPassword(password, username){
-return password.length < 8 ? false : true;
-
+if (password.length <8){
+    return false;
+} else {
+    return true;
+}
 }
 
-console.log(ValidPassword("haj", "tri"));
+console.log(ValidPassword("hajklmnj", "tri"));
